@@ -4,38 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prefeitura Municipal Águas de Prata</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/brasao.jpg" />
+    <script src="https://kit.fontawesome.com/18754a9f59.js" crossorigin="anonymous"></script>    <title>Prefeitura Municipal Águas de Prata</title>
   </head>
   <body>
     <header>
       <div class="header--top">
-        <ul>
-          <li>
-            <button class="bt-short">Contraste</button>
-            <button class="bt-short">A+</button>
-            <button class="bt-short">a-</button>
-            <button class="bt-short">Acessibilidade</button>
-          </li>
-        </ul>
-        <a href="">Ir para o conteúdo</a>
-        <a href="">Ir para o menu</a>
-        <a href="">Ir para a busca</a>
-        <a href="">Ir para o rodapé</a>
-      </div>
-      <div class="header-mid">
         <div>
+          <button class="bt-short"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          <button class="bt-short">A+</button>
+          <button class="bt-short">a-</button>
+          <button class="bt-short">Acessibilidade</button>
+        </div>
+        <div class="header--links">
+          <a href="#noticas">Ir para o conteúdo</a>
+          <a href="">Ir para o menu</a>
+          <a href="">Ir para a busca</a>
+          <a href="#rodape">Ir para o rodapé</a>
+        </div>
+      </div>
+      <div class="header--mid">
+        <div class="logo-pref">
           <img
             src="./images/brasao.jpg"
             alt="Brasão da cidade Águas de Prata"
+            class="brasao-top"
           />
-          <h1>Prefeitura Municipal de Águas de Prata</h1>
+          <h1>Prefeitura Municipal de <b>Águas de Prata</b></h1>
         </div>
-        <p>2 de janeiro de 2021</p>
-        <p>logo fb</p>
-        <p>logo insta</p>
-        <input type="text" name="caixa-pesquisa" id="pesquisa" />
+<p class="date">2 de janeiro de 2021</p>
+        <div class="search">
+          
+          <div><i class="fa-brands fa-facebook fa-2x"></i>
+          <i class="fa-brands fa-instagram fa-2x"></i></div>
+          
+          <div class="searchbox">
+          <input type="text" name="caixa-pesquisa" id="pesquisa" />
+          <button class="bt-short"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> </div>
       </div>
-      <div class="header-bot">
+      <div class="header--bot">
         <a href="">Sobre a Cidade</a>
         <a href="">Secretarias</a>
         <a href="">Turismo</a>
@@ -46,149 +55,212 @@
         <a href="">Editais</a>
         <a href="">Contato</a>
       </div>
-      <img src="./images/banner.png" alt="" />
+      <img src="./images/banner.png" alt="" class="banner" />
     </header>
 
     <div>
       <h3>Notícias</h3>
-      <figure>
-        <img src="./images/noticias2.jpg" alt="Grupo em reunião" /><b
-          >Reunião para melhorias na cidade acontece hoje</b
-        ><label>20 de janeiro de 2021</label>
-      </figure>
-      <figure>
-        <img
-          src="./images/noticias2.jpg"
-          alt="Duas pessoas com bicicleta ao pôr do sol"
-        /><b>Encontro de fotógrafos reúne grandes artistas</b
-        ><label>20 de janeiro de 2021</label>
-      </figure>
-      <figure>
-        <img
-          src="./images/noticias2.jpg"
-          alt="Criança de costas usando mochila"
-        /><b>Aulas não retornam esse mês veja o calendário</b
-        ><label>20 de janeiro de 2021</label>
-      </figure>
-      <figure>
-        <img src="./images/noticias2.jpg" alt="Vista aérea da cidade" /><b
-          >Conheça nossa cidade e tudo que está por vir</b
-        ><label>20 de janeiro de 2021</label>
-      </figure>
-      <figure>
-        <img src="./images/noticias4.jpg" alt="Máscaras e frasco de álcool" /><b
-          >Saiba como se prevenir contra o Covid-19</b
-        ><label>20 de janeiro de 2021</label>
-      </figure>
-      <figure>
-        <img
-          src="./images/noticias2.jpg"
-          alt="Close em pessoa utilizando notebook"
-        /><b>Dicas de como evitar golpes on-line</b
-        ><label>20 de janeiro de 2021</label>
-      </figure>
-      <button class="bt-large">Veja mais</button>
+      <div class="grade">
+        <section id="noticias">
+          <figure>
+            <img src="./images/noticias1.jpg" alt="Grupo em reunião" /><b
+              >Reunião para melhorias na cidade acontece hoje</b
+            ><label>20 de janeiro de 2021</label>
+          </figure>
+          <figure>
+            <img
+              src="./images/noticias2.jpg"
+              alt="Duas pessoas com bicicleta ao pôr do sol"
+            /><b>Encontro de fotógrafos reúne grandes artistas</b
+            ><label>20 de janeiro de 2021</label>
+          </figure>
+          <figure>
+            <img
+              src="./images/noticias3.jpg"
+              alt="Criança de costas usando mochila"
+            /><b>Aulas não retornam esse mês veja o calendário</b
+            ><label>20 de janeiro de 2021</label>
+          </figure>
+        </section>
+        <section >
+          <figure>
+            <img src="./images/noticias4.jpg" alt="Vista aérea da cidade" /><b
+              >Conheça nossa cidade e tudo que está por vir</b
+            ><label>20 de janeiro de 2021</label>
+          </figure>
+          <figure>
+            <img
+              src="./images/noticias5.jpg"
+              alt="Máscaras e frasco de álcool"
+            /><b>Saiba como se prevenir contra o Covid-19</b
+            ><label>20 de janeiro de 2021</label>
+          </figure>
+          <figure>
+            <img
+              src="./images/noticias6.jpg"
+              alt="Close em pessoa utilizando notebook"
+            /><b>Dicas de como evitar golpes on-line</b
+            ><label>20 de janeiro de 2021</label>
+          </figure>
+        </section>
+        <button class="bt-large">Veja mais</button>
+      </div>
     </div>
     <div>
       <h3>Principais Serviços</h3>
-      <button class="bt-green"><i>icon</i>Portal da transparência</button>
-      <button class="bt-green"><i>icon</i>2ª via IPTU</button>
-      <button class="bt-green"><i>icon</i>Portal de Serviços</button>
-      <button class="bt-green"><i>icon</i>Concurso Público</button>
-      <button class="bt-green"><i>icon</i>Nota Fiscal Eletrônica</button>
-      <button class="bt-green"><i>icon</i>Empresas</button>
-      <button class="bt-green"><i>icon</i>Serviços ao Contribuinte</button>
-      <button class="bt-green"><i>icon</i>Serviços aos Servidores</button>
+      <section>
+        <div class="services">
+          <button class="bt-green"><i>icon</i>Portal da transparência</button>
+          <button class="bt-green"><i>icon</i>2ª via IPTU</button>
+          <button class="bt-green"><i>icon</i>Portal de Serviços</button>
+          <button class="bt-green"><i>icon</i>Concurso Público</button>
+        </div>
+        <div class="services">
+          <button class="bt-green"><i>icon</i>Nota Fiscal Eletrônica</button>
+          <button class="bt-green"><i>icon</i>Empresas</button>
+          <button class="bt-green"><i>icon</i>Serviços ao Contribuinte</button>
+          <button class="bt-green"><i>icon</i>Serviços aos Servidores</button>
+        </div>
+      </section>
     </div>
-    <div>
-      <h3>Turismo</h3>
-      <figure>
-        <img src="./images/turismo3.jpg" alt="Pratos com alimentos" /><a href=""
-          >Onde Comer</a
-        >
-        <img src="./images/turismo3.jpg" alt="Cama de Hotel" /><a href=""
-          >Onde se Hospedar</a
-        >
-        <img src="./images/turismo3.jpg" alt="Cachoeira e vegetação" /><a
-          href=""
-          >Pontos Turísticos</a
-        >
-      </figure>
-    </div>
+
+    <h3>Turismo</h3>
+    <section>
+      <div class="turismo">
+        <figure>
+          <img
+            src="./images/turismo1.jpg"
+            alt="Pratos com alimentos"
+            class="imgTurismo"
+          /><a href=""></a>
+          <figcaption class="orange">Onde Comer</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="./images/turismo2.jpg"
+            alt="Cama de Hotel"
+            class="imgTurismo"
+          /><a href=""></a>
+          <figcaption class="green">Onde se Hospedar</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="./images/turismo3.jpg"
+            alt="Cachoeira e vegetação"
+            class="imgTurismo"
+          /><a href=""></a>
+          <figcaption class="blue">Pontos Turísticos</figcaption>
+        </figure>
+      </div>
+    </section>
     <div>
       <h3>Galeria</h3>
-      <img src="./images/turismo3.jpg" alt="Pessoa saltando de asa-delta" />
-      <img src="./images/turismo3.jpg" alt="Cachoeira" />
-      <img src="./images/turismo3.jpg" alt="Trilha na linha de trem" />
+      <section>
+        <div class="turismo">
+          <figure>
+            <img
+              src="./images/galeria1.jpg"
+              alt="Pessoa saltando de asa-delta"
+              class="imgGaleria"
+            />
+          </figure>
+          <figure>
+            <img
+              src="./images/galeria2.jpg"
+              alt="Cachoeira"
+              class="imgGaleria"
+            />
+          </figure>
+          <figure>
+            <img
+              src="./images/galeria3.jpg"
+              alt="Trilha na linha de trem"
+              class="imgGaleria"
+            />
+          </figure>
+        </div>
+      </section>
     </div>
     <div>
       <h3>Vídeos</h3>
-      <img src="./images/noticias2.jpg" alt="Mulher lendo livro" />
-      <img src="./images/noticias2.jpg" alt="Tela de celular com aplicativos" />
-      <img src="./images/noticias2.jpg" alt="Jardins da cidade" />
+      <section>
+        <div class="turismo">
+          <figure>
+            <img src="./images/video1.jpg" alt="Mulher lendo livro" />
+          </figure>
+          <figure>
+          <img
+            src="./images/video2.jpg"
+            alt="Tela de celular com aplicativos"
+          /></figure>
+          <figure>
+          <img src="./images/video3.jpg" alt="Jardins da cidade" />
+        </div>
+    </figure>
+      </section>
     </div>
-    <div>
+    <div class="turismo">
+        <section>
+            <figure>
       <a href=""
-        ><img src="./images/sete-cachoeiras.jpg" alt="Informativo Coronavírus"
-      /></a>
-      <a href=""><img src="./images/sete-cachoeiras.jpg" alt="IPTU 2021" /></a>
+        ><img src="./images/bt1.png" alt="Informativo Coronavírus" class="imgInfo"
+      /></a></figure>
+      <figure>
+      <a href=""><img src="./images/bt2.png" alt="IPTU 2021" class="imgInfo"/></a></figure>
+      <figure>
       <a href=""
         ><img
-          src="./images/sete-cachoeiras.jpg"
-          alt="Serviço de Informações ao Cidadão"
+          src="./images/bt3.png"
+          alt="Serviço de Informações ao Cidadão"class="imgInfo"
       /></a>
+    </figure>
+    </section></div>
     </div>
-    <div class="pre-footer">
-      <div>
-        <div>
+    <div class="pre--footer">
+      
+        <div class="div-prefooter">
           <h4>Editais</h4>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 09/2018</p>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 09/2018</p>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 02/2018</p>
+          <a class="p-editais"> <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 09/2018</a>
+          <a class="p-editais">  <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 09/2018</a>
+          <a class="p-editais">  <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 02/2018</a>
           <button class="bt-yellow">Veja todos</button>
         </div>
-        <div>
-          <h4>Licitações</h4>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 09/2018</p>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 09/2018</p>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 02/2018</p>
-          <button class="bt-yellow">Veja todos</button>
+        <div class="div-prefooter">
+            <div class="div-prefooter">
+                <h4>Licitações</h4>
+                <a class="p-editais"><i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 09/2018</a>
+                <a class="p-editais"> <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 09/2018</a>
+                <a class="p-editais"> <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 02/2018</a>
+                <button class="bt-yellow">Veja todos</button>
+              </div>
         </div>
-        <div>
-          <h4>Chamamentos</h4>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 09/2018</p>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 09/2018</p>
-          <i>icone</i>
-          <p>Edital de Chamamento Público 02/2018</p>
-          <button class="bt-yellow">Veja todos</button>
-        </div>
-      </div>
+        <div class="div-prefooter">
+            <h4>Chamamentos</h4>
+            <a class="p-editais"> <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 09/2018</a>
+            <a class="p-editais">  <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 09/2018</a>
+            <a class="p-editais">  <i class="fa-solid fa-file-arrow-down"></i> Edital de Chamamento Público nº 02/2018</a>
+            <button class="bt-yellow">Veja todos</button>
+          </div>
     </div>
-    <footer>
-      <div>
-        <img src="./images/brasao.jpg" alt="Brasão da Cidade" />
-        <p>Prefeitura Municipal</p>
+    <footer id="rodape">
+      <div class="footer-detail">
+        <img src="./images/brasao.jpg" alt="Brasão da Cidade" class="brasao-footer"/>
+        <div class="footer-text"><p>Prefeitura Municipal</p>
         <h5>Águas de Prata</h5>
+    </div>
       </div>
-      <div>
-        <h6>Secretarias</h6>
+      <div class="secretarias">
+        
+        <div class="div-secretarias"><h6>Secretarias</h6>
         <a href="">Administração</a>
         <a href="">Fazenda e Orçamento</a>
         <a href="">Desenvolvimento Social</a>
         <a href="">Cidadania e Segurança</a>
         <a href="">Desenvolvimento Econômico</a>
         <a href="">Trabalho e Meio Ambiente</a>
-        <a href="">Desenvolvimento Urbano</a>
+        <a href="">Desenvolvimento Urbano</a></div>
       </div>
-      <div>Desenvolvido por <b>webnets</b></div>
+      <div class="creditos">Desenvolvido por <b>webnets</b></div>
     </footer>
   </body>
 </html>
